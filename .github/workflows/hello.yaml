@@ -9,4 +9,4 @@ jobs:
     steps:
     - run: echo "🎉 This job uses runner scale set runners!"
     - run: id -a
-    - run: sudo apt update && sudo apt install jq
+    - run: sudo apt update && sudo apt -y install jq
