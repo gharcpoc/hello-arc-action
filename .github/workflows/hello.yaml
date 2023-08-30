@@ -8,4 +8,5 @@ jobs:
     runs-on: arc-runner-set
     steps:
     - run: echo "🎉 This job uses runner scale set runners!"
-    - run: apt update && apt install jq
+    - run: id -a
+    - run: sudo apt update && sudo apt install jq
