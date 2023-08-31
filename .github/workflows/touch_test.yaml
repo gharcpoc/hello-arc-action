@@ -1,6 +1,5 @@
 name: Touch test
-on:
-  workflow_dispatch:
+on: push
 
 jobs:
   Pollute-Work-Dir:
