@@ -1,0 +1,12 @@
+name: Touch test
+on:
+  workflow_dispatch:
+
+jobs:
+  Pollute-Work-Dir:
+    # You need to use the INSTALLATION_NAME from the previous step
+    runs-on: self-hosted
+    steps:
+    - run: ls -l
+    - run: touch pollute.txt
+    - run: ls -l
