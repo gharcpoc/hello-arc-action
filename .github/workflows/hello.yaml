@@ -7,6 +7,7 @@ jobs:
     # You need to use the INSTALLATION_NAME from the previous step
     runs-on: arc-runner-set
     steps:
+    - uses: actions/checkout@v3
     - run: echo "🎉 This job uses runner scale set runners!"
     - run: id -a
     - run: sudo apt update && sudo apt -y install jq
