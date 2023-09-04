@@ -5,6 +5,8 @@ jobs:
   Pollute-Work-Dir:
     # You need to use the INSTALLATION_NAME from the previous step
     runs-on: self-hosted
+    container:
+      image: ubuntu:jammy
     steps:
     - run: ls -l
     - run: touch pollute.txt
