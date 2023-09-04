@@ -9,7 +9,15 @@ jobs:
     - run: ls -l
     - run: touch pollute.txt
     - run: ls -l
+    - name: Upload output file
+      uses: actions/upload-artifact@v3
+      with:
+        name: pollute.txt
   second-job:
     runs-on: self-hosted
     steps:
+    - name: Download a single artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: pollute.txt
     - run: ls -lA
