@@ -3,7 +3,6 @@ on:
   push:
   workflow_dispatch:
 
-
 jobs:
   Pollute-Work-Dir:
     # You need to use the INSTALLATION_NAME from the previous step
