@@ -9,3 +9,7 @@ jobs:
     - run: ls -l
     - run: touch pollute.txt
     - run: ls -l
+  second-job:
+    runs-on: self-hosted
+    steps:
+    - ls -lA
