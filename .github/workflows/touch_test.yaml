@@ -11,6 +11,7 @@ jobs:
       image: ubuntu:jammy
     steps:
     - run: pwd
+    - run: touch ../pollute_outofbounds.txt
     - run: ls -l
     - run: touch pollute.txt
     - run: chmod 600 pollute.txt
