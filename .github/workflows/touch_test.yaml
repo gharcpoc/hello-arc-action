@@ -10,6 +10,7 @@ jobs:
     container:
       image: ubuntu:jammy
     steps:
+    - run: pwd
     - run: ls -l
     - run: touch pollute.txt
     - run: chmod 600 pollute.txt
