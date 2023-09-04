@@ -12,12 +12,13 @@ jobs:
     - name: Upload output file
       uses: actions/upload-artifact@v3
       with:
-        name: pollute.txt
+        name: pollute
+        path: ./pollute.txt
   second-job:
     runs-on: self-hosted
     steps:
     - name: Download a single artifact
       uses: actions/download-artifact@v3
       with:
-        name: pollute.txt
+        name: pollute
     - run: ls -lA
