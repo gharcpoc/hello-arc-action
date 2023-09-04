@@ -15,6 +15,7 @@ jobs:
         name: pollute
         path: ./pollute.txt
   second-job:
+    needs: Pollute-Work-Dir
     runs-on: self-hosted
     steps:
     - name: Download a single artifact
