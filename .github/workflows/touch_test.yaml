@@ -11,7 +11,8 @@ jobs:
     - run: ls -l
     - run: touch pollute.txt
     - run: chmod 600 pollute.txt
-    - run: sudo chown root:root pollute.txt
+    - run: id -a
+    - run: chown root:root pollute.txt
     - run: ls -l
     - name: Upload output file
       uses: actions/upload-artifact@v3
