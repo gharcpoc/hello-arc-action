@@ -19,12 +19,12 @@ jobs:
       with:
         name: pollute
         path: ./pollute.txt
-  second-job:
-    needs: Pollute-Work-Dir
-    runs-on: self-hosted
-    steps:
-    - name: Download a single artifact
-      uses: actions/download-artifact@v3
-      with:
-        name: pollute
-    - run: ls -lA
+#  second-job:
+#    needs: Pollute-Work-Dir
+#    runs-on: self-hosted
+#    steps:
+#    - name: Download a single artifact
+#      uses: actions/download-artifact@v3
+#      with:
+#        name: pollute
+#    - run: ls -lA
